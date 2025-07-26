@@ -15,10 +15,10 @@
       "workspace": "voteit_frontend"
     }
   },
-  "dfx": "0.20.0",
+  "dfx": "0.28.0",
   "networks": {
     "local": {
-      "bind": "127.0.0.1:4943",
+      "bind": "127.0.0.1:8000",
       "type": "ephemeral"
     }
   },
