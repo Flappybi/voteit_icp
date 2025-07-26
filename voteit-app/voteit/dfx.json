@@ -1,0 +1,33 @@
+{
+  "canisters": {
+    "voteit_backend": {
+      "main": "src/voteit_backend/main.mo",
+      "type": "motoko"
+    },
+    "voteit_frontend": {
+      "dependencies": [
+        "voteit_backend"
+      ],
+      "source": [
+        "src/voteit_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "voteit_frontend"
+    }
+  },
+  "dfx": "0.20.0",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943",
+      "type": "ephemeral"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

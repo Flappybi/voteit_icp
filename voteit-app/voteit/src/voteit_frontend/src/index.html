@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>VoteIt</title>
+  </head>
+  <body>
+    <h1>VoteIt App</h1>
+
+    <input id="candidate-name" placeholder="Nama Kandidat" />
+    <button onclick="addCandidate()">Tambah Kandidat</button>
+
+    <br><br>
+
+    <input id="vote-name" placeholder="Vote untuk Kandidat" />
+    <button onclick="vote()">Vote</button>
+
+    <br><br>
+
+    <input id="check-name" placeholder="Cek suara kandidat" />
+    <button onclick="checkVotes()">Cek Suara</button>
+    <p id="vote-count"></p>
+
+    <br><br>
+    <button onclick="getAllResults()">Lihat Semua Hasil</button>
+    <ul id="results-list"></ul>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
